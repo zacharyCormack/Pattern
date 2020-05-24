@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6049AD724742CF600D0B7CA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6049AD624742CF600D0B7CA /* main.cpp */; };
+		B6049AE824742D2400D0B7CA /* mod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6049ADD24742D2300D0B7CA /* mod.cpp */; };
+		B6049AE924742D2400D0B7CA /* Cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6049ADF24742D2300D0B7CA /* Cell.cpp */; };
+		B6049AEA24742D2400D0B7CA /* Gridline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6049AE024742D2300D0B7CA /* Gridline.cpp */; };
+		B6049AEB24742D2400D0B7CA /* tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6049AE324742D2300D0B7CA /* tests.cpp */; };
+		B6049AEC24742D2400D0B7CA /* Grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6049AE424742D2300D0B7CA /* Grid.cpp */; };
+		B6049AED24742D2400D0B7CA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6049AE524742D2300D0B7CA /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +28,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B6049AD324742CF600D0B7CA /* Patter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Patter; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6049AD624742CF600D0B7CA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B6049AD324742CF600D0B7CA /* Pattern */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = text; path = Pattern; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6049ADD24742D2300D0B7CA /* mod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mod.cpp; path = ../Pattern/mod.cpp; sourceTree = "<group>"; };
+		B6049ADE24742D2300D0B7CA /* mod.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = mod.hpp; path = ../Pattern/mod.hpp; sourceTree = "<group>"; };
+		B6049ADF24742D2300D0B7CA /* Cell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Cell.cpp; path = ../Pattern/Cell.cpp; sourceTree = "<group>"; };
+		B6049AE024742D2300D0B7CA /* Gridline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Gridline.cpp; path = ../Pattern/Gridline.cpp; sourceTree = "<group>"; };
+		B6049AE124742D2300D0B7CA /* Cell.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Cell.hpp; path = ../Pattern/Cell.hpp; sourceTree = "<group>"; };
+		B6049AE224742D2300D0B7CA /* Grid.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Grid.hpp; path = ../Pattern/Grid.hpp; sourceTree = "<group>"; };
+		B6049AE324742D2300D0B7CA /* tests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tests.cpp; path = ../Pattern/tests.cpp; sourceTree = "<group>"; };
+		B6049AE424742D2300D0B7CA /* Grid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Grid.cpp; path = ../Pattern/Grid.cpp; sourceTree = "<group>"; };
+		B6049AE524742D2300D0B7CA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../Pattern/main.cpp; sourceTree = "<group>"; };
+		B6049AE624742D2400D0B7CA /* Gridline.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Gridline.hpp; path = ../Pattern/Gridline.hpp; sourceTree = "<group>"; };
+		B6049AE724742D2400D0B7CA /* tests.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = tests.hpp; path = ../Pattern/tests.hpp; sourceTree = "<group>"; };
+		B606F2F62479D9B000D48E56 /* read.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = read.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +57,18 @@
 		B6049ACA24742CF600D0B7CA = {
 			isa = PBXGroup;
 			children = (
-				B6049AD524742CF600D0B7CA /* Patter */,
+				B6049AE524742D2300D0B7CA /* main.cpp */,
+				B606F2F62479D9B000D48E56 /* read.cpp */,
+				B6049ADF24742D2300D0B7CA /* Cell.cpp */,
+				B6049AE124742D2300D0B7CA /* Cell.hpp */,
+				B6049AE424742D2300D0B7CA /* Grid.cpp */,
+				B6049AE224742D2300D0B7CA /* Grid.hpp */,
+				B6049AE024742D2300D0B7CA /* Gridline.cpp */,
+				B6049AE624742D2400D0B7CA /* Gridline.hpp */,
+				B6049ADD24742D2300D0B7CA /* mod.cpp */,
+				B6049ADE24742D2300D0B7CA /* mod.hpp */,
+				B6049AE324742D2300D0B7CA /* tests.cpp */,
+				B6049AE724742D2400D0B7CA /* tests.hpp */,
 				B6049AD424742CF600D0B7CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +76,17 @@
 		B6049AD424742CF600D0B7CA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B6049AD324742CF600D0B7CA /* Patter */,
+				B6049AD324742CF600D0B7CA /* Pattern */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B6049AD524742CF600D0B7CA /* Patter */ = {
-			isa = PBXGroup;
-			children = (
-				B6049AD624742CF600D0B7CA /* main.cpp */,
-			);
-			path = Patter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B6049AD224742CF600D0B7CA /* Patter */ = {
+		B6049AD224742CF600D0B7CA /* Pattern */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B6049ADA24742CF600D0B7CA /* Build configuration list for PBXNativeTarget "Patter" */;
+			buildConfigurationList = B6049ADA24742CF600D0B7CA /* Build configuration list for PBXNativeTarget "Pattern" */;
 			buildPhases = (
 				B6049ACF24742CF600D0B7CA /* Sources */,
 				B6049AD024742CF600D0B7CA /* Frameworks */,
@@ -77,9 +96,9 @@
 			);
 			dependencies = (
 			);
-			name = Patter;
+			name = Pattern;
 			productName = Patter;
-			productReference = B6049AD324742CF600D0B7CA /* Patter */;
+			productReference = B6049AD324742CF600D0B7CA /* Pattern */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -96,7 +115,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B6049ACE24742CF600D0B7CA /* Build configuration list for PBXProject "Patter" */;
+			buildConfigurationList = B6049ACE24742CF600D0B7CA /* Build configuration list for PBXProject "Pattern" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,7 +128,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B6049AD224742CF600D0B7CA /* Patter */,
+				B6049AD224742CF600D0B7CA /* Pattern */,
 			);
 		};
 /* End PBXProject section */
@@ -119,7 +138,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6049AD724742CF600D0B7CA /* main.cpp in Sources */,
+				B6049AE824742D2400D0B7CA /* mod.cpp in Sources */,
+				B6049AEB24742D2400D0B7CA /* tests.cpp in Sources */,
+				B6049AED24742D2400D0B7CA /* main.cpp in Sources */,
+				B6049AEA24742D2400D0B7CA /* Gridline.cpp in Sources */,
+				B6049AE924742D2400D0B7CA /* Cell.cpp in Sources */,
+				B6049AEC24742D2400D0B7CA /* Grid.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +278,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B6049ACE24742CF600D0B7CA /* Build configuration list for PBXProject "Patter" */ = {
+		B6049ACE24742CF600D0B7CA /* Build configuration list for PBXProject "Pattern" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6049AD824742CF600D0B7CA /* Debug */,
@@ -263,7 +287,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B6049ADA24742CF600D0B7CA /* Build configuration list for PBXNativeTarget "Patter" */ = {
+		B6049ADA24742CF600D0B7CA /* Build configuration list for PBXNativeTarget "Pattern" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6049ADB24742CF600D0B7CA /* Debug */,
