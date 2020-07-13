@@ -86,10 +86,3 @@ vector<bitset<64> > Grid::convert_to_bitset() {
 	}
 	return bit_array;
 }
-
-Gridline Grid::get_line(int index, bool row_not_col) {
-	if(row_not_col) {
-		return grid_rows[index];
-	}
-	return grid_cols[index];
-}

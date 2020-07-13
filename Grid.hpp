@@ -18,7 +18,5 @@ public:
 	void colour();
 	void randomize(double skew);
 	vector<bitset<64> > convert_to_bitset();
-	void record(char*);
-	Gridline get_line(int index, bool row_not_col);
 	Grid(int side, double skew);
 };
