@@ -2,7 +2,8 @@
 using namespace std;
 //#include <iostream>
 
-Cell::Cell(Gridline* up, Gridline* down, Gridline* left, Gridline* right, int x_coord, int y_coord) {
+Cell::Cell(Gridline* up, Gridline* down, Gridline* left, Gridline* right, int x_coord, int y_coord)
+{
 	up_p = up;
 	down_p = down;
 	left_p = left;
@@ -11,11 +12,13 @@ Cell::Cell(Gridline* up, Gridline* down, Gridline* left, Gridline* right, int x_
 	col_index = x_coord;
 }
 
-bool Cell::get_next(bool vertical) {
+bool Cell::get_next(bool vertical)
+{
 	//Forgot all about colour!
 	// This caused a big error and it took a few hours to figure out the mistake.
 	//cout << col_index << row_index << " ";
-	if(!vertical) {
+	if(!vertical)
+{
 		Gridline right = *right_p;
 		//cout << right.get_edge(false);
 		//cout << row_index%2 << "  ";
@@ -27,6 +30,7 @@ bool Cell::get_next(bool vertical) {
 	return down.get_edge(false) ^ (col_index%2==1) ^ colour;
 }
 
-void Cell::draw(bool newColour) {
+void Cell::draw(bool newColour)
+{
 	colour = newColour;
 }

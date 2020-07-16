@@ -3,12 +3,12 @@
 #include "Cell.hpp"
 #include <vector>
 #include <bitset>
-#include "mod.hpp"
 #include <cstdlib>
 #include <fstream>
 using namespace std;
 
-class Grid {
+class Grid
+{
 	int length;
 	//index with cells[row][column]
 	vector<vector<Cell> > cells;

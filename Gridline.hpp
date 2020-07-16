@@ -1,6 +1,7 @@
 #pragma once
 
-class Gridline {
+class Gridline
+{
 	bool edge_activity;
 	bool parity;
 public:

@@ -2,7 +2,8 @@
 #include "Gridline.hpp"
 #include <vector>
 
-class Cell {
+class Cell
+{
 	int row_index;
 	int col_index;
 public:
