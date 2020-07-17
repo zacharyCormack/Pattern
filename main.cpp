@@ -45,9 +45,8 @@ int main (int num, char** inputs)
 			"  0. all went well\n"
 			"  1. too many parameters, give 2 or 3\n"
 			"  2. too few parameters, give 2 or 3\n"
-			"  3. param one is of wrong type, should be unsigned int\n"
-			"  4. param one is out of bounds, should be less than 64\n"
-			"  5. param three is invalid, must be of type double and from -1 to 1\n";
+			"  3. param one is out of bounds, should be between 0 and 64, exlusive\n"
+			"  4. param three is invalid, must be of type double and from -1 to 1\n\n\n";
 		else if(inputs[2][0] == 'a')
 			cout <<
 			"\nABOUT THIS PROGRAM\n\n"
@@ -106,7 +105,7 @@ int main (int num, char** inputs)
 	ins >> side;
 	if (side > 63 || side == 0)
 	{
-		cout << "Error #3!";
+		cout << "Error #3!\n";
 		return 3;
 	}
 	double bias = 0.0;
@@ -117,7 +116,7 @@ int main (int num, char** inputs)
 	}
 	if (bias > 1 || bias < -1)
 	{
-		cout << "Error #4";
+		cout << "Error #4!\n";
 		return 4;
 	}
 	Grid grid(side, bias);
@@ -127,11 +126,7 @@ int main (int num, char** inputs)
 	for (unsigned short i = 0; i < side; i++)
 	{
 		for (unsigned short j = 0; j < side; j++)
-		{
-			cout << (rows[i][j] ? "  " : "\e[47;30m  \e[0m");
 			file << (rows[i][j] ? "  " : "\e[47;30m  \e[0m");
-		}
-		cout << "\n";
 		file << "\n";
 	}
 	return 0;
