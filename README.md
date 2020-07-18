@@ -9,9 +9,10 @@ When compiled, this program should be linked to all the class files, and *requir
 Information on how to use the program may be found by running it with the flag `h f`, as in `./main h f`.
 The output of the `main.cpp` program can be read by the `cat` command.
 
-It also contains a `many.cpp` file.
-It should be compiled *on its own*, takes *no parameters*, requires a Patterns folder to be set up and the `main.cpp` file to be compiled to an executable called `main`.
-It will call this **640 times**, each time with *different parameters*, thus generating a random collection of patterns.
+This project also contains a `many.cpp`, and a `view.cpp` file.
+`many.cpp` should be compiled *on its own*, takes *no parameters*, requires a Patterns folder to be set up and the `main.cpp` file to be compiled to an executable called `main`.
+`many.cpp` will call this **640 times**, each time with *different parameters*, thus generating a random collection of patterns.
+`view.cpp` can then be used to randomly display 64 patterns in a sequence, like a slideshow.
 
 ## `Cell`
 

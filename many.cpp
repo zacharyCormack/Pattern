@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <sstream>
 #include <iostream>
+#include <unistd.h>
 using namespace std;
 
 int main()
@@ -14,6 +15,7 @@ int main()
 			if (system(command_stream.str().c_str()) > 0)
 				errors++;
 			command_stream.str((string)"");
+			usleep(999);
 		}
 	cout << errors << " errors occured.\n";
 	return 0;
