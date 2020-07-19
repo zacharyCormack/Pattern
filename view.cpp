@@ -14,7 +14,7 @@ int main()
 		usleep(125000);
 		unsigned x = rand() % 10;
 		unsigned y = rand() % 62 + 1;
-		cout << "\n\nPattern " << x << " " << (y < 10 ? "0" : "") << y << ", the " << i+1;
+		cout << "\e[" << 64-y << 'B' << "Pattern " << x << " " << (y < 10 ? "0" : "") << y << ", the " << i+1;
 		if (i == 10 || i == 11 || i == 12)
 			cout << "th ";
 		else

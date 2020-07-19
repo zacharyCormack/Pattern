@@ -35,4 +35,4 @@ The `convert_to_bitset` method stores all of the data of the `Cells` in a `bitse
 
 In use:
 
-![Pattern](./example.png "So cool!")
+![Pattern](./example.gif "So cool!")
